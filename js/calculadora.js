@@ -8,10 +8,16 @@ const nowDate = `${date.getFullYear()}-0${date.getMonth()}-${date.getDate()}`
 
 const url = `https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real?start_date=${nowDate}T${Time}:00&end_date=${nowDate}T${Time}:59&time_trunc=hour`
 async function getData() {
-    var data = await fetch(url)
-        .then(response => response.json())
-        .then(data => data["included"][0]["attributes"]["values"][0]["value"])
-    apiContainer.value = (data / 1000).toFixed(4)
+    try {
+        var data = await fetch(url)
+            .then(response => response.json())
+            .then(data => data["included"][0]["attributes"]["values"][0]["value"])
+        apiContainer.value = (data / 1000).toFixed(4)  
+    }
+    catch {
+        apiContainer.value = 0.1330
+    }
+    
 }
 getData()
 
