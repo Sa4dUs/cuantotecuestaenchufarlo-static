@@ -111,12 +111,34 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
 
 @media screen and (max-width: 400px){
     .calculadora input[type="text"] {
-        width: 25%;
+        width: 15%;
         font-size: 80%;
     }
 	.calculadora input[class="label"] {
-        width: 25%;
-        text-align: center;
-        padding-left: 1em;
+        width: 20%;
+        text-align: left;
+        position: relative;
+        right: 2em;
     }
+
+    .calculadora input[type="number"] {
+        width: 25%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .calculadora input[value="€"] {
+        width: 10%;
+        margin-left: 1.5em;
+    }
+
+    .calculadora input[value="Wh"] {
+        margin-left: 1.5em;
+        width: 10%;
+    }
+
+    .calculadora input[value="horas"] {
+        margin-left: 1.5em;
+        width: 10%;
+    
 }

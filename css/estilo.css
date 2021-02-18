@@ -32,7 +32,8 @@ header {
 	background:#252932;
 	margin-bottom: 20px;
 	border:1px #252932;
-	padding-right: 2em;
+	margin: auto;
+	padding: 1em;
 }
 
 .wrapper {
@@ -58,7 +59,8 @@ header .logo {
 	color:#f2f2f2;
 	font-size:45px;
 	line-height:200px;
-	margin:auto
+	margin:auto;
+	height: auto;
 }
 
 header nav {
@@ -218,11 +220,12 @@ hr {
 		width:100%;
 		text-align:center; /*Centramos el menu y el logotipo*/
 		line-height:2em;
-		font-size: 180%;
+		font-size: 150%;
 	}
  
 	.header2 {
 		width:100%;
+		height: auto;
 		margin: auto;
 	}
  
@@ -230,6 +233,7 @@ hr {
 	.header2 nav {
 		line-height:2em;
 		margin-top: 1em;
+		font-size: 150%;
 		width:100%;
 	}
 

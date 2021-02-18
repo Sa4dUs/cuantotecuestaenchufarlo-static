@@ -1,7 +1,8 @@
 html {
 	min-height: 100%;
-	position: relative;
 	width: 100%;
+	margin: auto;
+	position: relative;
   }
 
 footer {
@@ -33,6 +34,7 @@ header {
 	margin-bottom: 20px;
 	border:1px #252932;
 	padding-right: 2em;
+	text-align: center;
 }
 
 .wrapper {
@@ -62,8 +64,9 @@ header .logo {
 }
 
 header nav {
-	float:right;
 	line-height:200px;
+	width: 100%;
+	text-align: center;
 }
 
 header nav a {
@@ -77,6 +80,7 @@ header nav a {
 	-webkit-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	transition:all 500ms ease;
+	margin:auto;
 }
 
 header nav a:hover {
@@ -86,7 +90,7 @@ header nav a:hover {
 
 .header2 {
 	position: fixed;
-	height:100px;
+	height:auto;
 	z-index: 10000;
 }
  
@@ -207,6 +211,7 @@ hr {
 @media screen and (max-width: 950px) {
 	html {
 		width: 100%;
+		margin: 0 auto;
 	}
 	
 	*{
@@ -219,11 +224,13 @@ hr {
 		text-align:center; /*Centramos el menu y el logotipo*/
 		line-height:2em;
 		font-size: 180%;
+		margin: auto;
 	}
  
 	.header2 {
 		width:100%;
 		margin: auto;
+		height: auto;
 	}
  
 	.header2 .logo,
@@ -231,6 +238,8 @@ hr {
 		line-height:2em;
 		margin-top: 1em;
 		width:100%;
+		font-size: 150%;
+		margin: auto;
 	}
 
 	.wrapper {
@@ -240,7 +249,7 @@ hr {
 	}
 
 	.wrapper div {
-		margin: 1em;
+		margin: 1em auto;
 		width: 95%;
 	}
 	.center {
