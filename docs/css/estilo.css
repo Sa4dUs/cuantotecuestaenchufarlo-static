@@ -58,7 +58,7 @@ header .logo {
 	color:#f2f2f2;
 	font-size:45px;
 	line-height:200px;
-	float:left;
+	margin:auto
 }
 
 header nav {
