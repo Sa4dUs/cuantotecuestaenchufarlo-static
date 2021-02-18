@@ -221,18 +221,14 @@ hr {
 		font-size: 180%;
 	}
  
-
-
 	.header2 {
-		height:auto;
-		width:90%;
-		padding: 2em;
+		width:100%;
 		margin: auto;
 	}
  
 	.header2 .logo,
 	.header2 nav {
-		line-height:40px;
+		line-height:2em;
 		margin-top: 1em;
 		width:100%;
 	}
