@@ -38,4 +38,7 @@ document.getElementById("botonCalcular").addEventListener("click", () => {
         </div>`
     }
 
+    consumeContainer.value = ""
+    timeContainer.value = ""
+
 })
